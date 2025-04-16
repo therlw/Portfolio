@@ -1,0 +1,128 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    color: #333;
+    
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
+    background-color: #fff;
+}
+
+header div {
+    text-align: left;
+}
+
+header p {
+    position: relative;
+    margin-top: 10rem; /* Başlığı biraz aşağı kaydır */
+    right: 320px; /* Başlığı biraz sola kaydır */
+    font-size: 1rem;
+}
+
+header img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    margin-left: -19rem;
+}
+
+section {
+    padding: -1rem;
+    margin: 1rem auto;
+    max-width: 570px; /* Section genişliğini biraz artır */
+    background-color: #f0f0f018;
+    border-radius: 8px;
+    
+    
+}
+
+section h2 {
+    color: #333;
+    
+    padding-bottom: 0.5rem;
+    font-size: 1.2rem; /* Başlık yazı boyutunu biraz artır */
+    font-weight: 800;
+}
+
+section p {
+    color: #333;
+    
+    padding-bottom: 0.5rem;
+    font-size: 1.2rem; /* Başlık yazı boyutunu biraz artır */
+    font-weight: 600;
+}
+
+.skill-list, .tool-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.2rem;
+    margin-top: 0.2rem;
+    
+}
+
+.skill-list span, .tool-list span {
+    background-color: #332f2f;
+    color: #ffffff;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.2rem;
+    margin: 0.05rem;
+    font-size: 0.65rem;
+    transition: opacity 0.3s ease; /* Geçiş efekti */
+}
+
+.skill-list span:hover, .tool-list span:hover {
+    opacity: 0.7; /* Şeffaflık efekti */
+}
+.project-list {
+    display: flex; /* Proje kartlarını yan yana sırala */
+    justify-content: center; /* Proje kartlarını yatayda ortala */
+    flex-wrap: wrap; /* Kartlar sığmadığında alt satıra geç */
+    gap: 1rem;
+}
+
+.project {
+    width: 250px; /* Kart genişliğini sabitle */
+    border: 1px solid #ddd;
+    padding: 0.5rem;
+    border-radius: 6px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Kart içindeki öğeleri yatayda ortala */
+    transition: border-color 0.3s ease; /* Geçiş efekti ekle */
+}
+.project:hover {
+    border-color: black; /* Fare üzerine gelindiğinde kenar rengini siyah yap */
+}
+.project img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 0.5rem;
+}
+
+.project h3 {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+}
+
+.project p {
+    margin-bottom: 0.5rem;
+    font-size: 0.75rem;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #fff;
+    border-top: 1px solid #eee;
+}
+
+footer img, footer i {
+    font-size: 1rem; /* Sosyal medya simgelerini biraz artır */
+    margin: 0 0.18rem;
+}
