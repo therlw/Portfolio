@@ -21,6 +21,7 @@ header div {
 }
 
 /* Başlık için daha esnek ve responsive bir yapı */
+/* Header p için genel stil */
 header p {
     position: absolute;
     top: 6rem; /* Başlığı biraz aşağı kaydır */
@@ -28,7 +29,27 @@ header p {
     transform: translateX(-50%); /* Tam olarak ortalama için sağa kaydırma */
     font-size: 1rem;
     max-width: 90%; /* İçeriği ekrana sığdırmak için genişliği sınırla */
-    white-space: nowrap;
+    text-align: center; /* Metni yatayda ortalayalım */
+    white-space: normal; /* Metnin satır atlamasına izin ver */
+    word-wrap: break-word; /* Çok uzun kelimeleri zorla kır */
+    overflow: hidden; /* Uzun metinlerin taşmasını engelle */
+}
+
+/* Mobil uyum */
+@media (max-width: 768px) {
+    header p {
+        font-size: 0.9rem; /* Yazı boyutunu biraz küçült */
+        top: 8rem; /* Başlığı biraz daha aşağı kaydır */
+        max-width: 85%; /* Genişliği mobilde biraz daha daralt */
+    }
+    section {
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%; /* Mobilde genişliği biraz daraltalım */
+        max-width: 100%;
+        text-align: center; /* İstersen içeriği de ortalarsın */
+    }
+
 }
 
 header img {
