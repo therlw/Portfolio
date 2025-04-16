@@ -13,24 +13,29 @@ header {
     align-items: center;
     padding: 1.5rem;
     background-color: #fff;
+    position: relative; /* Header pozisyonunu belirliyoruz */
 }
 
 header div {
     text-align: left;
 }
 
+/* Başlık için daha esnek ve responsive bir yapı */
 header p {
-    position: relative;
-    margin-top: 10rem; /* Başlığı biraz aşağı kaydır */
-    right: 320px; /* Başlığı biraz sola kaydır */
+    position: absolute;
+    top: 6rem; /* Başlığı biraz aşağı kaydır */
+    left: 50%; /* Ekranın ortasına hizalayalım */
+    transform: translateX(-50%); /* Tam olarak ortalama için sağa kaydırma */
     font-size: 1rem;
+    max-width: 90%; /* İçeriği ekrana sığdırmak için genişliği sınırla */
+    word-wrap: break-word; /* Uzun kelimelerin ekrana sığmaması durumunda satırı kır */
 }
 
 header img {
     width: 90px;
     height: 90px;
     border-radius: 50%;
-    margin-left: -19rem;
+    margin-left: 1rem;
 }
 
 section {
