@@ -28,7 +28,7 @@ header p {
     transform: translateX(-50%); /* Tam olarak ortalama için sağa kaydırma */
     font-size: 1rem;
     max-width: 90%; /* İçeriği ekrana sığdırmak için genişliği sınırla */
-    word-wrap: break-word; /* Uzun kelimelerin ekrana sığmaması durumunda satırı kır */
+    white-space: nowrap;
 }
 
 header img {
